@@ -1,5 +1,5 @@
 .experts{
-    @include res('padding-top', 80px);
+    @include res('padding-top', 50px);
     @include res('padding-bottom', 50px);
     @include media(576){
         @include resa('padding-top', 60px);

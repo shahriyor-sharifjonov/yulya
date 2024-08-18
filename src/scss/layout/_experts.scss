@@ -5,6 +5,36 @@
         @include resa('padding-top', 60px);
         @include resa('padding-bottom', 50px);
     }
+    &__tag{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include res('gap', 8px);
+        @include res('margin-bottom', 80px);
+        @include media(576){
+            @include resa('gap', 8px);
+            @include resa('margin-bottom', 40px);
+        }
+        &-item{
+            @include res('padding-top', 5.5px);
+            @include res('padding-bottom', 5.5px);
+            @include res('padding-left', 9px);
+            @include res('padding-right', 9px);
+            @include res('border-radius', 30px);
+            @include res('font-size', 12px);
+            line-height: 120%;
+            background: #F2F7FF;    
+            font-weight: 500;
+            @include media(576){
+                @include resa('padding-top', 5.5px);
+                @include resa('padding-bottom', 5.5px);
+                @include resa('padding-left', 9px);
+                @include resa('padding-right', 9px);
+                @include resa('border-radius', 30px);
+                @include resa('font-size', 12px);
+            }
+        }
+    }
     &__title{
         text-align: center;
         margin-left: auto;
@@ -14,6 +44,12 @@
         @include res('margin-bottom', 100px);
         @include res('max-width', 451px);
         @include res('font-size', 36px);
+        &.mb{
+            @include res('margin-bottom', 35px);
+            @include media(576){
+                @include resa('margin-bottom', 24px);
+            }
+        }
         @include media(576){
             @include resa('margin-bottom', 50px);
             @include resa('max-width', 451px);
@@ -25,6 +61,7 @@
         @include res('font-size', 23px);
         font-weight: 500;
         line-height: 120%;
+        text-transform: uppercase;
         @include media(576){
             @include resa('margin-bottom', 24px);
             @include resa('font-size', 23px);
@@ -116,6 +153,72 @@
         img{
             max-width: 90%;
             max-height: 70%;
+        }
+    }
+}
+.rating{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include res('row-gap', 70px);
+    @include media(576){
+        @include resa('row-gap', 15px);
+    }
+    &__item{
+        @include res('padding', 20px);
+        @include res('border-radius', 6px);
+        @include res('width', 380px);
+        color: #fff;
+        background: linear-gradient(255deg, #e38ddd 0%, #9571f6 100%);
+        @include media(576){
+            @include resa('padding', 15px);
+            @include resa('border-radius', 6px);
+            @include resa('width', 175px);
+        }
+        &.icon{
+            background: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            svg{
+                aspect-ratio: 1/1;
+                max-width: 90%;
+                max-height: 90%;
+                height: auto;
+            }
+        }
+        &.white{
+            color: #202122;
+            background: rgba(#F2F7FF, 0.7);
+        }
+        &-title{
+            @include res('margin-bottom', 15px);
+            @include res('font-size', 18px);
+            font-weight: 500;
+            line-height: 120%;
+            @include media(576){
+                @include resa('margin-bottom', 10px);
+                @include resa('font-size', 16px);
+            }
+        }
+        &-subtitle{
+            @include res('margin-bottom', 20px);
+            @include res('font-size', 18px);
+            font-weight: 400;
+            line-height: 120%;
+            @include media(576){
+                @include resa('margin-bottom', 15px);
+                @include resa('font-size', 12px);
+            }
+        }
+        &-p{
+            @include res('font-size', 14px);
+            font-weight: 400;
+            line-height: 120%;
+            @include media(576){
+                @include resa('font-size', 12px);
+            }
         }
     }
 }

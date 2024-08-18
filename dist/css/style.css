@@ -819,13 +819,6 @@
   border-radius: 0.5vw;
 }
 
-.experts__item:last-of-type {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-}
-
 .experts__item:not(:last-of-type) {
   margin-bottom: 5.8333333333vw;
 }
@@ -1372,6 +1365,13 @@ ul {
     gap: 6.1224489796vw;
     padding: 5.1020408163vw;
     border-radius: 1.5306122449vw;
+  }
+
+  .experts__item:last-of-type {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   .experts__item:not(:last-of-type) {

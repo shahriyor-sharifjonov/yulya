@@ -43,7 +43,9 @@
             @include resa('border-radius', 6px);
         }
         &:last-of-type{
-            flex-direction: column-reverse;
+            @include media(576){
+                flex-direction: column-reverse;
+            }
         }
         &:not(:last-of-type){
             @include res('margin-bottom', 70px);

@@ -1,0 +1,31 @@
+.intro{
+    @include res('height', 369px);
+    @include res('padding-top', 37px);
+    background: url('../img/intro-bg.png') center / cover no-repeat;
+    @include media(576){
+        @include resa('height', 486px);
+        @include resa('padding-top', 37px);
+        background: url('../img/intro-bg-sm.png') center / cover no-repeat;
+    }
+    &__title{
+        font-weight: 500;
+        line-height: 120%;
+        @include res('margin-bottom', 15px);
+        @include res('max-width', 451px);
+        @include res('font-size', 36px);
+        @include media(576){
+            @include resa('margin-bottom', 15px);
+            @include resa('max-width', 336px);
+            @include resa('font-size', 26px);
+        }
+    }
+    &__p{
+        line-height: 120%;
+        @include res('font-size', 14px);
+        @include res('max-width', 366px);
+        @include media(576){
+            @include resa('font-size', 14px);
+            @include resa('max-width', 272px);
+        }
+    }
+}

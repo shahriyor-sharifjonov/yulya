@@ -1,0 +1,166 @@
+.header{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid #E5E9F2;
+    @include res('border-width', 1px);
+    @include res('height', 72px);
+    @include media(576){
+        @include resa('border-width', 1px);
+        @include resa('height', 50px);
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media(576){
+            justify-content: flex-end;
+        }
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include res('gap', 20px);
+        @include media(576){
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background: #fff;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            @include resa('gap', 20px);
+            &.open{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .header__loc{
+            display: none;
+            @include media(576){
+                display: flex;
+            }
+        }
+        .header__btn{
+            display: none;
+            @include media(576){
+                display: block;
+            }
+        }
+    }
+    &__link{
+        @include res('font-size', 12px);
+        line-height: 120%;
+        font-weight: 500;
+        text-decoration: none;
+        @include media(576){
+            @include resa('font-size', 20px);
+        }
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include res('gap', 26px);
+        @include media(576){
+            display: none;
+        }
+    }
+    &__loc{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: #18191F;
+        font-weight: 500;
+        line-height: 120%;
+        @include res('font-size', 12px);
+        @include res('gap', 8px);
+        @include media(576){
+            @include resa('margin-top', 20px);
+            @include resa('font-size', 14px);
+            @include resa('gap', 8px);
+        }
+        svg{
+            @include res('width', 14px);
+            @include res('height', 20px);
+            @include media(576){
+                @include resa('width', 14px);
+                @include resa('height', 20px);
+            }
+        }
+    }
+    &__btn{
+        background: #6165D7;
+        color: #fff;
+        font-weight: 500;
+        @include res('border-radius', 6px);
+        @include res('font-size', 12px);
+        @include res('padding-top', 10px);
+        @include res('padding-bottom', 10px);
+        @include res('padding-right', 22px);
+        @include res('padding-left', 22px);
+        @include media(576){
+            @include resa('border-radius', 6px);
+            @include resa('font-size', 14px);
+            @include resa('padding-top', 10px);
+            @include resa('padding-bottom', 10px);
+            @include resa('padding-right', 22px);
+            @include resa('padding-left', 22px);
+        }
+    }
+    &__button {
+        @include resa('width', 30px);
+        @include resa('height', 30px);
+        position: relative;
+        border: none;
+        outline: none;
+        background: none;
+        display: none;
+        position: relative;
+        z-index: 1001;
+        @include media(576) {
+            display: block;
+        }
+        &.open {
+            .header__button-line,
+            &::before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(135deg);
+            }
+            &::after {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-135deg);
+            }
+        }
+        &::before,
+        &::after,
+        &-line {
+            transition: 0.5s;
+            position: absolute;
+            content: "";
+            left: 0;
+            width: 100%;
+            @include resa('height', 2px);
+            background: #000;
+        }
+        &::before {
+            top: 20%;
+        }
+        &::after {
+            bottom: 20%;
+        }
+        &-line {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

@@ -1,0 +1,157 @@
+.info{
+    @include res('height', 1184px);
+    @include res('padding-top', 257px);
+    @include res('padding-bottom', 188px);
+    background: url('../img/info-bg.png') center / cover no-repeat;
+    @include media(576){
+        @include resa('height', 1554px);
+        @include resa('padding-top', 150px);
+        @include resa('padding-bottom', 100px);
+        background: url('../img/info-bg-sm.png') center / cover no-repeat;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include res('margin-bottom', 40px);
+        @include media(576){
+            flex-direction: column;
+            @include resa('margin-bottom', 20px);
+        }
+        &-title{
+            @include res('max-width', 314px);
+            @include res('font-size', 23px);
+            @include res('margin-bottom', 28px);
+            font-weight: 500;
+            line-height: 120%;
+            @include media(576){
+                @include resa('max-width', 314px);
+                @include resa('font-size', 23px);
+                @include resa('margin-bottom', 28px);
+            }
+        }
+        &-row{
+            display: flex;
+            @include res('gap', 54px);
+            @include res('margin-bottom', 50px);
+            @include media(576){
+                flex-direction: column;
+                @include resa('gap', 20px);
+                @include resa('margin-bottom', 24px);
+            }
+        }
+        &-p{
+            @include res('font-size', 14px);
+            line-height: 120%;
+            @include media(576){
+                @include resa('font-size', 14px);
+            }
+        }
+        &-text{
+            font-weight: 500;
+            line-height: 130%;
+            @include res('max-width', 462px);
+            @include res('font-size', 18px);
+            @include media(576){
+                @include resa('max-width', 462px);
+                @include resa('font-size', 18px);
+                @include resa('margin-bottom', 20px);
+            }
+        }
+        &-img{
+            @include res('width', 233.85px);
+            @include res('min-width', 233.85px);
+            @include res('height', 233.85px);
+            line-height: 0;
+            @include media(576){
+                @include resa('width', 233.85px);
+                @include resa('min-width', 233.85px);
+                @include resa('height', 233.85px);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__bot{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include res('gap', 100px);
+        @include res('margin-bottom', 50px);
+        @include media(576){
+            flex-direction: column-reverse;
+            @include resa('gap', 20px);
+            @include resa('margin-bottom', 50px);
+        }
+        &-img{
+            @include res('width', 217.3px);
+            @include res('min-width', 217.3px);
+            @include res('height', 187.43px);
+            line-height: 0;
+            @include media(576){
+                @include resa('width', 217.3px);
+                @include resa('min-width', 217.3px);
+                @include resa('height', 187.43px);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-p{
+            @include res('font-size', 14px);
+            line-height: 120%;  
+            @include media(576){
+                @include resa('font-size', 14px);
+            }
+        }
+    }
+    &__tag{
+        &-title{
+            font-weight: 500;
+            line-height: 120%;
+            @include res('font-size', 23px);
+            @include res('margin-bottom', 34px);
+            @include res('max-width', 507px);
+            @include media(576){
+                @include resa('font-size', 23px);
+                @include resa('margin-bottom', 34px);
+                @include resa('max-width', 350px);
+            }
+        }
+        &-content{
+            display: flex;
+            flex-wrap: wrap;
+            @include res('row-gap', 15px);
+            @include res('column-gap', 20px);
+            @include res('max-width', 387px);
+            @include media(576){
+                @include resa('row-gap', 15px);
+                @include resa('column-gap', 15px);
+                @include resa('max-width', 387px);
+            }
+        }
+        &-item{
+            @include res('padding-top', 5.5px);
+            @include res('padding-bottom', 5.5px);
+            @include res('padding-left', 9px);
+            @include res('padding-right', 9px);
+            @include res('border-radius', 30px);
+            @include res('font-size', 12px);
+            line-height: 120%;
+            color: #fff;
+            font-weight: 500;
+            background: linear-gradient(255deg, #e38ddd 0%, #9571f6 100%);
+            @include media(576){
+                @include resa('padding-top', 5.5px);
+                @include resa('padding-bottom', 5.5px);
+                @include resa('padding-left', 9px);
+                @include resa('padding-right', 9px);
+                @include resa('border-radius', 30px);
+                @include resa('font-size', 12px);
+            }
+        }
+    }
+}

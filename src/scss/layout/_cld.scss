@@ -1,4 +1,8 @@
 .cld{
+    @include res('padding-bottom', 25px);
+    @include media(576){
+        @include resa('padding-bottom', 25px);
+    }
     &__content{
         display: flex;
         justify-content: space-between;

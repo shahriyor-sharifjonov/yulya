@@ -1077,6 +1077,71 @@
   height: 0.6666666667vw;
 }
 
+.f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4.1666666667vw;
+  padding-bottom: 4.1666666667vw;
+}
+
+.f__svg {
+  line-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 53vw;
+  height: 24.6666666667vw;
+}
+
+.f__svg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.f__title {
+  margin-bottom: 1vw;
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.f__p {
+  font-size: 1.3333333333vw;
+  line-height: 115%;
+  text-align: center;
+  margin-bottom: 3vw;
+  max-width: 31.4166666667vw;
+}
+
+.f__btn {
+  background: #6165D7;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0.5vw;
+  font-size: 1vw;
+  padding-top: 0.8333333333vw;
+  padding-bottom: 0.8333333333vw;
+  padding-right: 1.8333333333vw;
+  padding-left: 1.8333333333vw;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1730,6 +1795,36 @@ ul {
     top: 0.5102040816vw;
     width: 2.0408163265vw;
     height: 2.0408163265vw;
+  }
+
+  .f {
+    padding-top: 12.7551020408vw;
+    padding-bottom: 12.7551020408vw;
+  }
+
+  .f__svg {
+    width: 81.1224489796vw;
+    height: 37.7551020408vw;
+  }
+
+  .f__title {
+    margin-bottom: 3.0612244898vw;
+    font-size: 9.1836734694vw;
+  }
+
+  .f__p {
+    font-size: 4.0816326531vw;
+    margin-bottom: 9.1836734694vw;
+    max-width: 81.6326530612vw;
+  }
+
+  .f__btn {
+    border-radius: 1.5306122449vw;
+    font-size: 3.5714285714vw;
+    padding-top: 2.5510204082vw;
+    padding-bottom: 2.5510204082vw;
+    padding-right: 5.612244898vw;
+    padding-left: 5.612244898vw;
   }
 
   .container {

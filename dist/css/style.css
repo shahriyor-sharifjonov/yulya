@@ -786,6 +786,80 @@
   background: #6165D7;
 }
 
+.experts {
+  padding-top: 6.6666666667vw;
+  padding-bottom: 4.1666666667vw;
+}
+
+.experts__title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 8.3333333333vw;
+  max-width: 37.5833333333vw;
+  font-size: 3vw;
+}
+
+.experts__subtitle {
+  margin-bottom: 4.1666666667vw;
+  font-size: 1.9166666667vw;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.experts__item {
+  background: rgba(242, 247, 255, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6.6666666667vw;
+  padding: 1.6666666667vw;
+  border-radius: 0.5vw;
+}
+
+.experts__item:last-of-type {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.experts__item:not(:last-of-type) {
+  margin-bottom: 5.8333333333vw;
+}
+
+.experts__item-img {
+  border-radius: 0.5vw;
+  width: 23.5833333333vw;
+  min-width: 23.5833333333vw;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.experts__item-img img {
+  width: 100%;
+}
+
+.experts__item-title {
+  margin-bottom: 0.5833333333vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.experts__item-link {
+  margin-bottom: 2.5vw;
+  font-size: 1.5vw;
+  line-height: 120%;
+}
+
+.experts__item-p {
+  font-size: 1.1666666667vw;
+  line-height: 120%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1272,6 +1346,55 @@ ul {
     padding-bottom: 2.5510204082vw;
     width: 48.4693877551vw;
     font-size: 3.0612244898vw;
+  }
+
+  .experts {
+    padding-top: 15.306122449vw;
+    padding-bottom: 12.7551020408vw;
+  }
+
+  .experts__title {
+    margin-bottom: 12.7551020408vw;
+    max-width: 115.0510204082vw;
+    font-size: 7.1428571429vw;
+  }
+
+  .experts__subtitle {
+    margin-bottom: 6.1224489796vw;
+    font-size: 5.8673469388vw;
+  }
+
+  .experts__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 6.1224489796vw;
+    padding: 5.1020408163vw;
+    border-radius: 1.5306122449vw;
+  }
+
+  .experts__item:not(:last-of-type) {
+    margin-bottom: 6.1224489796vw;
+  }
+
+  .experts__item-img {
+    border-radius: 1.5306122449vw;
+    width: 100%;
+  }
+
+  .experts__item-title {
+    margin-bottom: 1.7857142857vw;
+    font-size: 4.5918367347vw;
+  }
+
+  .experts__item-link {
+    margin-bottom: 7.6530612245vw;
+    font-size: 4.5918367347vw;
+  }
+
+  .experts__item-p {
+    font-size: 3.5714285714vw;
   }
 
   .container {

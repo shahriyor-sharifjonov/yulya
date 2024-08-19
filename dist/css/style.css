@@ -1716,7 +1716,25 @@ ul {
   .rating__item {
     padding: 3.8265306122vw;
     border-radius: 1.5306122449vw;
-    width: 44.6428571429vw;
+    width: 100%;
+  }
+
+  .rating__item:nth-child(1) {
+    -webkit-box-ordinal-group: -4;
+        -ms-flex-order: -5;
+            order: -5;
+  }
+
+  .rating__item:nth-child(2) {
+    -webkit-box-ordinal-group: -3;
+        -ms-flex-order: -4;
+            order: -4;
+  }
+
+  .rating__item:nth-child(4) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 
   .rating__item-title {

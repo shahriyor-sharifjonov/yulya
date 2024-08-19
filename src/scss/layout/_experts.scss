@@ -173,7 +173,16 @@
         @include media(576){
             @include resa('padding', 15px);
             @include resa('border-radius', 6px);
-            @include resa('width', 175px);
+            width: 100%;
+            &:nth-child(1){
+                order: -5;
+            }
+            &:nth-child(2){
+                order: -4;
+            }
+            &:nth-child(4){
+                order: -1;
+            }
         }
         &.icon{
             background: none;
